@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',"IndexController@index");
+
+Route::post("/save/json","IndexController@save_json");
+Route::get("/fetch/json","IndexController@fetch_json");
